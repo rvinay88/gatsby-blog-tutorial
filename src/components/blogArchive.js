@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery, Link } from "gatsby"
 
 const BlogArchive = () => {
   const postsResponse = useStaticQuery(graphql`
@@ -11,6 +11,7 @@ const BlogArchive = () => {
               title
               date
               category
+              slug
             }
             excerpt(pruneLength: 100)
           }
@@ -28,7 +29,9 @@ const BlogArchive = () => {
         {postsData.map((post, index) => {
           return (
             <li key={index}>
-              <h2>{post.frontmatter.title}</h2>
+              <Link to={`/blog/${post.frontmatter.slug}`}>
+                <h2>{post.frontmatter.title}</h2>
+              </Link>
               <p>
                 Published on {post.frontmatter.date} in{" "}
                 {post.frontmatter.category}

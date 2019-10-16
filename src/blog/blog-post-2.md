@@ -1,10 +1,11 @@
 ---
 title: My second blog post
-category: article, tutorials
+category: ["articles", "tutorials"]
 date: "10-16-2019"
+slug: "blog-post-2"
 ---
 
-# My second blog post
+# Hello world 2
 
 Cras libero lectus, ullamcorper nec pellentesque ut, convallis vel turpis. Vivamus in erat purus. Cras tincidunt hendrerit tortor, eu imperdiet diam vestibulum vel. Proin nec sem dolor. Nunc elementum tellus diam, a ultrices odio aliquam eu. Nam feugiat venenatis enim. Quisque ultricies mi vitae tellus euismod mollis. Etiam nec magna sit amet purus pulvinar ullamcorper vel sit amet nisl.
 
